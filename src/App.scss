@@ -1,0 +1,82 @@
+/* Variables */
+
+$blueColour-primary: #1879ca;
+$blueColour-secondary: rgba(18, 115, 196, 0.06);
+$orange-color: #ff8000;
+$white-color: #fff;
+
+$textColor-secondary: #474747;
+
+/* Utility classes */
+
+.flex {
+    display: flex;
+}
+
+.itemsCenter {
+    align-items: center;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom styles */
+
+.searchBoxContainer {
+    height: 100vh;
+    background: $blueColour-primary;
+    padding: 0 10%;
+}
+
+.searchBox {
+    padding: 16px;
+    flex: 1;
+}
+
+.option {
+    cursor: pointer;
+    padding: 12px;
+
+    &:hover {
+        background: $blueColour-secondary;
+    }
+}
+
+.placeTypeBadge {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.placeTypeBadgeText {
+    padding: 0.3rem 0;
+    border: none;
+    border-radius: 4px;
+    min-width: 5.1rem;
+}
+
+.placeTypeBadgeText-blue {
+    background: $blueColour-primary;
+    color: $white-color;
+}
+
+.placeTypeBadgeText-orange {
+    background: $orange-color;
+}
+
+.label-primary {
+    font-size: 14px;
+}
+
+.label-secondary {
+    color: $textColor-secondary;
+}
